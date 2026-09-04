@@ -66,6 +66,11 @@ public class ArchivosSupermercado {
                     String[] clienteData = lineaCliente.split("\t");
                     clientes.add(clienteData);
                 }
+                /** clientes = [
+                ["123456789", "Juan Perez", "25", "3001234567", "juan@email.com"],  // Cliente 0
+                ["987654321", "Maria Gomez", "30", "3007654321", "maria@email.com"], // Cliente 1
+                ["111222333", "Carlos Lopez", "22", "3011112222", "carlos@email.com"] // Cliente 2
+                ]*/
                 brClientes.close();
 
                 //PASO 6: OBTENER EL TOTAL DE REGISTROS
