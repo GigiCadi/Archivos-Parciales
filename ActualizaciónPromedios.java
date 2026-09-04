@@ -48,6 +48,12 @@ El archivo de la actividad complementaria tiene los siguientes datos: Código de
 
             //PROCESAR CADA ESTUDIANTE
             while ((lineaEstudiante = brEstudiantes.readLine()) != null) {
+                /** brEstudiantes.readLine()
+                Llama al método readLine() del BufferedReader
+                Lee UNA línea completa del archivo
+                Devuelve:
+                Un String con el texto de la línea → si HAY una línea
+                null → si NO hay más líneas (fin del archivo)*/
                 //Leer datos del estudiante
                 String[] estudianteData = lineaEstudiante.split("\t");
                 long codigo = Long.parseLong(estudianteData[0]);
